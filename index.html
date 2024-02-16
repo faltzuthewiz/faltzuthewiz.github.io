@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sonja Fallström's portfolio site.">
+    <meta name="keywords" content="software development, portfolio, student">
+    <meta name="author" content="Sonja Fallström">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonja's portfolio</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body onload="getDimensions()">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">Sonja Fallström</div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(Images/20220715_Kajo2022_Avajaiset_ToivoLaiho-28.jpg);">
+                        <!-- <img src="Images/20220715_Kajo2022_Avajaiset_ToivoLaiho-28.jpg" alt="Kajo 2022 mainstage"> -->
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/KajoLux_small.jpg" alt="Kajo Lux">
+                        </div>
+                        <div class="subtitle">
+                            I was developing the official mobile application for the 8. Finnish Scout Jamboree Kajo
+                            2022. The app Kajo Lux was a participant's tool for day-to-day camp life.
+                            <p class="smalltext">Photo credits: Toivo Laiho / Suomen Partiolaiset</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(https://images.unsplash.com/photo-1677504206526-2e76aafeccc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/TKI_kuva.png" alt="TKI.fi logo">
+                        </div>
+                        <div class="subtitle">
+                            I built <a class="subtitle-link" href="https://tki.fi">a TKI.fi website</a> with WordPress
+                            Elementor. The website presents research, development and innovation solutions of the
+                            Finnish Universities of Applied Sciences.
+                            <p class="smalltext">Photo credits: BoliviaInteligente / Unsplash</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/js-logo.png" alt="JavaScript">
+                        </div>
+                        <div class="subtitle">
+                            Most of my coding experience is in JavaScript – I have used it in my own projects, at
+                            school and in
+                            two work projects.
+                            <p class="smalltext">Photo credits: Florian Olivo / Unsplash</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(https://images.unsplash.com/photo-1677297681311-cfdcb74bba8f?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/java.png" alt="Java logo">
+                        </div>
+                        <div class="subtitle">
+                            I have been studying Java at school. For example, I have made a board game site with Spring
+                            Boot and Thymeleaf as a final project for the Back End Programming course.
+                            <p class="smalltext">Photo credits: BoliviaInteligente / Unsplash</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Images/RBR_game.png);">
+                        <!-- <img src="Images/RBR_game.png" alt="Game screenshot"> -->
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/unity.png" alt="Unity logo">
+                        </div>
+                        <div class="subtitle">
+                            I have used a bit of C# and Unity game engine. My dream is to make my own indie game in the
+                            future.
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(https://images.unsplash.com/photo-1677297680558-df5641e505ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/github-mark-white.png" alt="GitHub logo">
+                        </div>
+                        <div class="subtitle">
+                            Curious about my coding projects? Here's <a class="subtitle-link"
+                                href="https://github.com/faltzuthewiz">my GitHub</a>.
+                            <p class="smalltext">Photo credits: BoliviaInteligente / Unsplash</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(https://images.unsplash.com/photo-1677504208043-97c432369162?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/clubtupa.png" alt="Club Tupa logo">
+                        </div>
+                        <div class="subtitle">
+                            I am the founder and I was the first leader of Club Tupa - a geek student club. The club is
+                            today 5 years old and the longest running student club in Haaga-Helia UAS.
+                            <p class="smalltext">Photo credits: BoliviaInteligente / Unsplash</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(Images/reggies-phone-image.PNG);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/web-logo.png" alt="web development">
+                        </div>
+                        <div class="subtitle">
+                            Outside school, I am deepening my understanding of web development and user interface
+                            design.
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(https://images.unsplash.com/photo-1677297679397-050be2b144b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80);">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/instagram.png" alt="Instagram logo">
+                        </div>
+                        <div class="subtitle">
+                            Besides coding, I am also passionate about comics. You can follow my comics on <a
+                                class="subtitle-link" href="https://www.instagram.com/bobdthewiz/">Instagram
+                                @bobdthewiz</a>.
+                            <p class="smalltext">Photo credits: BoliviaInteligente / Unsplash</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            © Sonja Fallström 2024
+        </div>
+    </div>
+    <script>
+        const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+        let throttled = false;
+        //let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        let vw = window.innerWidth || 0;
+
+        function getDimensions() {
+            let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        }
+
+        window.addEventListener('resize', () => {
+            if (!throttled) {
+                getDimensions();
+                throttled = true;
+                setTimeout(function () {
+                    throttled = false;
+                }, 250)
+            }
+
+
+        });
+
+        if (vw > 720) {
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener("mouseover", () => {
+                    portfolioItem.childNodes[1].classList.add("img-darken");
+                })
+            });
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener("mouseout", () => {
+                    portfolioItem.childNodes[1].classList.remove("img-darken");
+                })
+            });
+        }
+
+
+
+    </script>
+</body>
+
+</html>
