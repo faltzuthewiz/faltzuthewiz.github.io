@@ -84,7 +84,10 @@ h2 {
     color: #001E6F;
 }
 
-
+.contact-group {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .contact-link {
     background-color: #001E6F;
